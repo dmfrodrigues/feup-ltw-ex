@@ -15,6 +15,8 @@
 
     body>footer{
         grid-column-end: 3;
+        
+        margin: 1em 0 0 0;
     }
 }
 
@@ -88,5 +90,11 @@
         text-shadow: none;
         position: static;
         max-width: none;
+    }
+
+    body>footer{
+        grid-column-end: 3;
+        
+        margin: 0;
     }
 }
