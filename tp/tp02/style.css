@@ -160,7 +160,7 @@ section#news article p {
     line-height: 1.6;
 }
 
-section#news article p:first-of-type::first-letter {
+section#news > article > p:first-of-type::first-letter {
     font-size: 200%;
     line-height: 0;
 }
