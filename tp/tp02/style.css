@@ -78,31 +78,34 @@ nav#menu li {
 }
 
 nav#menu ul > li {
-    border-top: 5px solid black;
+    border-color: black;
+    border-width: 0;
+    border-top-width: 5px;
+    border-style: solid;
 }
 
 nav#menu ul > li:nth-child(1) {
-    border-top: 5px solid #E1493E;
+    border-color: #E1493E;
 }
 
 nav#menu ul > li:nth-child(2) {
-    border-top: 5px solid #8ABA56;
+    border-color: #8ABA56;
 }
 
 nav#menu ul > li:nth-child(3) {
-    border-top: 5px solid #5B4282;
+    border-color: #5B4282;
 }
 
 nav#menu ul > li:nth-child(4) {
-    border-top: 5px solid #FF8932;
+    border-color: #FF8932;
 }
 
 nav#menu ul > li:nth-child(5) {
-    border-top: 5px solid #19B6E9;
+    border-color: #19B6E9;
 }
 
 nav#menu ul > li:nth-child(6) {
-    border-top: 5px solid #E84C8B;
+    border-color: #E84C8B;
 }
 
 aside#related {
