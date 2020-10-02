@@ -127,12 +127,12 @@ aside#related article p {
 }
 
 section#news {
-    padding: 0 1em 0 0;
+    padding: 1em 1em 0 0;
 }
 
 section#news article {
     background-color: white;
-    margin: 1em 0 0 0;
+    margin: 0 0 1em 0;
 }
 
 section#news img {
