@@ -1,0 +1,144 @@
+html {
+    background-color: #DDDDFF;
+}
+
+body {
+    position: relative;
+    max-width: 53em;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body > #header {
+    position: relative;
+    color: white;
+    padding: 0;
+}
+
+body > #header > h1 {
+    background-color: #405C96;
+    margin: 0;
+    padding: 1.4em 0 1.2em 2.2em;
+}
+
+body > #header > h2 {
+    background-color: #405C96;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    transform-origin: 0 0;
+    transform: rotate(90deg) translate(0, -100%);
+    margin: 0;
+    padding: 10px 0;
+    width: 800px;
+    min-height: 50px;
+}
+
+body > #menu {
+    background-color: #5CA33E;
+    width: 198px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    padding: 0.1em;
+    font-size: 9pt;
+    text-align: center;
+}
+
+body > #menu
+body > #menu a,
+body > #menu a:visited {
+    color: white;
+}
+
+body > #menu > ul {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+
+body > #menu ul li {
+    margin: 0;
+    padding: 2em;
+}
+
+body > #content {
+    background-color: white;
+    font-size: 9.1pt;
+    margin: 0 198px 0 50px;
+    padding: 0.3em 0.8em;
+}
+
+body > #content > .news-item {
+    border-bottom: 1px solid #363636;
+}
+
+body > #content > .news-item > h3 {
+    font-size: 19pt;
+    margin: 0;
+    padding: 0;
+}
+
+body > #content > .news-item > img {
+    margin: 1em 1em 1em 0;
+}
+
+body > #content > .news-item > p.introduction {
+    font-style: italic;
+}
+
+body > #content > .news-item > p {
+    margin: 1em 0 1em 0;
+    line-height: 1.7;
+}
+
+body > #content > .news-item > ul {
+    padding: 0;
+    margin: 2.2em 0 1em 0;
+}
+
+body > #content > .news-item > ul li {
+    list-style: none;
+    padding: 0.5em 1em;
+    border-bottom: 3px solid #966939;
+}
+
+body > #content > .news-item > ul li,
+body > #content > .news-item > ul li a {
+    color: black;
+}
+
+body > #footer {
+    background-color: white;
+    font-size: 9.1pt;
+    margin: 0 198px 0 50px;
+    padding: 0 1em;
+}
+
+body > #footer * {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+body > #content > .news-item > img {
+    float: left;
+}
+
+body > #content > .news-item > ul li {
+    display: inline;
+}

@@ -1,0 +1,128 @@
+html {
+    background-image: url('https://web.fe.up.pt/~arestivo/page/img/exercises/css/stripe.png');
+}
+
+body {
+    margin: 0;
+    margin-left: 40px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+body > #header {
+    background-color: black;
+    color: white;
+    padding: 1.35em;
+}
+
+body > #header > h1,
+body > #header > h2 {
+    margin: 0;
+}
+
+body > #header > h2 {
+    font-size: 10pt;
+}
+
+body > #menu {
+    background-color: #333333;
+    margin: 0;
+    padding: 0.8em;
+    font-size: 10pt;
+}
+
+body > #menu
+body > #menu a,
+body > #menu a:visited {
+    color: black;
+}
+
+body > #menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > #menu ul li {
+    background-color: white;
+    margin: 0 1em 0 0;
+    padding: 0.1em 0.7em;
+}
+
+body > #content {
+    font-size: 9.2pt;
+    max-width: 800px;
+    margin: 0;
+    padding: 0.7em;
+}
+
+body > #content > .news-item {
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+body > #content > .news-item > h3 {
+    font-size: 19pt;
+    margin: 0;
+    padding: 0;
+}
+
+body > #content > .news-item > img {
+    margin: 1em 0 1em 1em;
+}
+
+body > #content > .news-item > p.introduction {
+    font-style: italic;
+}
+
+body > #content > .news-item > p {
+    margin: 1em 0 1em 0;
+    line-height: 1.7;
+}
+
+body > #content > .news-item > ul {
+    background-color: #363636;
+    padding: 0.5em;
+    margin: 1.2em 0 0 0;
+}
+
+body > #content > .news-item > ul li {
+    list-style: none;
+    padding: 0.5em;
+}
+
+body > #content > .news-item > ul li,
+body > #content > .news-item > ul li a {
+    color: white;
+}
+
+body > #footer {
+    text-align: right;
+    font-size: 9.1pt;
+    max-width: 800px;
+    margin-right: 1em;
+    padding: 0;
+}
+
+body > #footer * {
+    margin: 0;
+}
+
+
+
+
+
+body > #menu ul li {
+    display: inline
+}
+
+body > #content > .news-item > img {
+    float: right;
+}
+
+body > #content > .news-item > ul li {
+    display: inline;
+}
