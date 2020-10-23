@@ -19,6 +19,8 @@
                 <a href="register.php">Register</a>
                 <a href="login.php">Login</a>
             <?php } else { ?>
+                <span><?=$_SESSION['username']?></span>
+                <a href="insert_news.php">Insert news</a>
                 <a href="action_logout.php">Logout</a>
             <?php } ?>
             </div>

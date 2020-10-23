@@ -20,6 +20,7 @@
         ?>
         <?php if(isset($_SESSION['username'])){ ?>
             <a href="edit_news.php?id=<?=$_GET['id']?>">Edit</a>
+            <a href="action_delete_news.php?id=<?=$_GET['id']?>">Delete news</a>
         <?php } ?>
         <footer>
             <span class="author"><?= $article['name'] ?></span>
