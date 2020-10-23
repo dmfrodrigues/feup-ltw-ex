@@ -23,10 +23,10 @@ CREATE TABLE comments (
 );
 
 -- All passwords are 1234 in SHA-1 format
-INSERT INTO users VALUES ("dominic", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220", "Dominic Woods");
-INSERT INTO users VALUES ("zachary", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220", "Zachary Young");
-INSERT INTO users VALUES ("alicia", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220", "Alicia Hamilton");
-INSERT INTO users VALUES ("abril", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220", "Abril Cooley");
+INSERT INTO users VALUES ("dominic", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220", "Dominic Woods"); -- 1234
+INSERT INTO users VALUES ("zachary", "7b52009b64fd0a2a49e6d8a939753077792b0554", "Zachary Young"); -- 12
+INSERT INTO users VALUES ("alicia", "81fe8bfe87576c3ecb22426f8e57847382917acf", "Alicia Hamilton"); --abcd
+INSERT INTO users VALUES ("abril", "da23614e02469a0d7c7bd1bdab5c9c474b1904dc", "Abril Cooley"); --ab
 
 INSERT INTO news VALUES (NULL,
   'Lorem ipsum dolor sit amet, consectetur',
