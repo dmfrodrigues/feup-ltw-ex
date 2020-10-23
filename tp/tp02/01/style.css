@@ -126,11 +126,13 @@ aside#related article p {
     line-height: 1.56;
 }
 
-section#news {
+section#news,
+section#edit-news {
     padding: 1em 1em 0 0;
 }
 
-section#news article {
+section#news article,
+section#edit-news form {
     background-color: white;
     margin: 0 0 1em 0;
 }
@@ -154,10 +156,28 @@ section#news header h1 {
     padding: 1em 1em 1em 1em;
 }
 
-section#news article p {
+section#news article p,
+section#edit-news form {
     font-size: 10.5pt;
     padding: 0 1em 0 1em;
     line-height: 1.6;
+}
+
+section#edit-news form {
+    padding: 1em;
+}
+
+section#edit-news form * {
+    display: block;
+}
+
+section#edit-news form input[name="id"] {
+    display: none;
+}
+
+section#edit-news form label>input[type="text"],
+section#edit-news form label>textarea {
+    width: 100%;
 }
 
 section#news > article > p:first-of-type::first-letter {

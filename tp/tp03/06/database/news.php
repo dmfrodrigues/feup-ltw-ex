@@ -20,4 +20,16 @@ function getArticle(int $id){
     $article = $stmt->fetch();
     return $article;
 }
+
+function updateArticle(int $id, string $title, string $introduction, string $fulltext){
+    global $db;
+    $stmt = $db->prepare('UPDATE news SET
+    title=:title, introduction=:introduction, fulltext=:fulltext
+    WHERE id=:id');
+    $stmt->bindParam(':title'       , $title       , PDO::PARAM_STR);
+    $stmt->bindParam(':introduction', $introduction, PDO::PARAM_STR);
+    $stmt->bindParam(':fulltext'    , $fulltext    , PDO::PARAM_STR);
+    $stmt->bindParam(':id'          , $id          , PDO::PARAM_INT);
+    return $stmt->execute();
+}
 ?>
