@@ -13,20 +13,7 @@
   <body>
     <?php
     include_once('templates/common/header.php');
-    ?>
-    <section id="login">
-      <h1>Login</h1>
-      <form>
-        <label>
-          Username <input type="text" name="username">
-        </label>
-        <label>
-          Password <input type="password" name="password">
-        </label>
-        <input type="submit" value="Login">
-      </form>
-    </section>
-    <?php
+    include_once('templates/credentials/login.php');
     include_once('templates/common/footer.php');
     ?>
   </body>
