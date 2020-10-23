@@ -21,6 +21,20 @@ function getArticle(int $id){
     return $article;
 }
 
+function insertArticle(string $title, string $tags, string $introduction, string $fulltext){
+    global $db;
+    $stmt = $db->prepare('INSERT INTO news(title, published, tags, username, introduction, fulltext) VALUES
+    (:title, :published, :tags, :username, :introduction, :fulltext)');
+    $stmt->bindParam(':title'       , $title               , PDO::PARAM_STR);
+    $stmt->bindParam(':published'   , time()               , PDO::PARAM_INT);
+    $stmt->bindParam(':tags'        , $tags                , PDO::PARAM_STR);
+    $stmt->bindParam(':username'    , $_SESSION['username'], PDO::PARAM_STR);
+    $stmt->bindParam(':introduction', $introduction        , PDO::PARAM_STR);
+    $stmt->bindParam(':fulltext'    , $fulltext            , PDO::PARAM_STR);
+    $stmt->execute();
+    return $db->lastInsertId();
+}
+
 function updateArticle(int $id, string $title, string $introduction, string $fulltext){
     global $db;
     $stmt = $db->prepare('UPDATE news SET
