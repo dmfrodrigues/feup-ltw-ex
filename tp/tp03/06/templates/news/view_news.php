@@ -18,7 +18,9 @@
         <?php
         include_once('templates/comments/list_comments.php');
         ?>
-        <a href="edit_news.php?id=<?=$_GET['id']?>">Edit</a>
+        <?php if(isset($_SESSION['username'])){ ?>
+            <a href="edit_news.php?id=<?=$_GET['id']?>">Edit</a>
+        <?php } ?>
         <footer>
             <span class="author"><?= $article['name'] ?></span>
             <span class="tags">
