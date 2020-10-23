@@ -1,3 +1,13 @@
+<?php
+
+include_once('database/connection.php');
+include_once('database/news.php');
+$article = getArticle($_GET['id']);
+
+include_once('database/comments.php');
+$comments = getComments($_GET['id']);
+
+?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -49,16 +59,9 @@
     </aside>
     <section id="news">
       <?php
-      include_once('database/connection.php');
-      $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = :id');
-      $stmt->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
-      $stmt->execute();
-      $article = $stmt->fetch();
-
       $epoch = (int)$article['published'];
       $dt = new DateTime("@$epoch");
       ?>
-      <!-- <pre><?php var_dump($article); ?></pre> -->
 
       <article>
         <header>
@@ -70,11 +73,6 @@
         echo implode(' ', array_map(function($tag){ return '<p>'.$tag.'</p>'; }, explode(PHP_EOL, $article['fulltext'])));
         ?>    
         <section id="comments">
-          <?php
-          $stmt = $db->prepare('SELECT * FROM comments JOIN users USING (username) WHERE news_id = ?');
-          $stmt->execute(array($_GET['id']));
-          $comments = $stmt->fetchAll();
-          ?>
           <h1><?=count($comments)?> Comments</h1>
           <?php
           foreach($comments as $comment) {

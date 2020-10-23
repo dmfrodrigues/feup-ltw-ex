@@ -1,7 +1,6 @@
 <?php
 function getAllNews(){
     global $db;
-    // echo var_dump($db);
     $stmt = $db->prepare('SELECT news.*, users.*, COUNT(comments.id) AS comments
     FROM news JOIN
         users USING (username) LEFT JOIN
@@ -11,5 +10,14 @@ function getAllNews(){
     $stmt->execute();
     $articles = $stmt->fetchAll();
     return $articles;
+}
+
+function getArticle(int $id){
+    global $db;
+    $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = :id');
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $article = $stmt->fetch();
+    return $article;
 }
 ?>
