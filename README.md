@@ -13,4 +13,5 @@
 ## Contents
 
 - Solved TP exercises
-    - [TP02](https://dmfrodrigues.github.io/feup-ltw-ex/tp/tp02/)
+    - [TP02](https://dmfrodrigues.github.io/feup-ltw-ex/tp/tp02/) | CSS
+    - [TP03](https://dmfrodrigues.github.io/feup-ltw-ex/tp/tp03/) | PHP
