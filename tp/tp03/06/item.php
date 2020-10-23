@@ -1,13 +1,3 @@
-<?php
-
-include_once('database/connection.php');
-include_once('database/news.php');
-$article = getArticle($_GET['id']);
-
-include_once('database/comments.php');
-$comments = getComments($_GET['id']);
-
-?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -22,12 +12,15 @@ $comments = getComments($_GET['id']);
   </head>
   <body>
     <?php
+    include_once('database/connection.php');
+    include_once('database/news.php');
+    $article = getArticle($_GET['id']);
+    
+    include_once('database/comments.php');
+    $comments = getComments($_GET['id']);
+
     include_once('templates/common/header.php');
-    ?>
-    <?php
     include_once('templates/news/view_news.php');
-    ?>
-    <?php
     include_once('templates/common/footer.php');
     ?>
   </body>
