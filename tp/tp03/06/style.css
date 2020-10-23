@@ -1,0 +1,209 @@
+body{
+    font-family: Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;
+    letter-spacing: -0.05em;
+}
+
+body > header {
+    font-family: Verdana, sans-serif;
+    color: white;
+    background-color: #046DD5;
+    padding: 1em 1em 1em 1em;
+}
+
+header a {
+    color: white;
+}
+
+header h1 {
+    font-size: 19pt;
+
+    margin: 0;
+    padding: 0.5em 0 0 0;
+}
+
+header h2 {
+    font-size: 9.5pt;
+
+    margin: 0;
+}
+
+header div {
+    margin: 0;
+}
+
+header div#signup {
+    font-size: 10pt;
+}
+
+header div#signup a  {
+    padding: 0em 0.5em 0em 0em;
+}
+
+header div#signup a + a {
+    padding: 0em 1em 0em 1em;
+    border-left: 1px solid white;
+}
+
+input#hamburger {
+    display: none;
+}
+
+nav#menu {
+    background-color: white;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+nav#menu a {
+    color: black;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#menu li {
+    padding: 1em;
+}
+
+nav#menu ul > li {
+    border-color: black;
+    border-width: 0;
+    border-top-width: 5px;
+    border-style: solid;
+}
+
+nav#menu ul > li:nth-child(1) {
+    border-color: #E1493E;
+}
+
+nav#menu ul > li:nth-child(2) {
+    border-color: #8ABA56;
+}
+
+nav#menu ul > li:nth-child(3) {
+    border-color: #5B4282;
+}
+
+nav#menu ul > li:nth-child(4) {
+    border-color: #FF8932;
+}
+
+nav#menu ul > li:nth-child(5) {
+    border-color: #19B6E9;
+}
+
+nav#menu ul > li:nth-child(6) {
+    border-color: #E84C8B;
+}
+
+aside#related {
+    background-color: #2A2F33;
+    padding: 1em 1em 1em 1em;
+    font-size: 10.6pt;
+}
+
+aside#related, aside#related a {
+    color: white;
+}
+
+aside#related article h1 {
+    font-size: 14pt;
+}
+
+aside#related article p {
+    line-height: 1.56;
+}
+
+section#news {
+    padding: 1em 1em 0 0;
+}
+
+section#news article {
+    background-color: white;
+    margin: 0 0 1em 0;
+}
+
+section#news img {
+    width: 100%;
+    padding: 0 0 0.5em 0;
+}
+
+section#news header {
+    background-color: transparent;
+    text-shadow: 5px 5px 4px #000000;
+    position: absolute;
+    padding: 0;
+    max-width: 290px;
+    line-height: 1.4;
+}
+
+section#news header h1 {
+    font-size: 17pt;
+    padding: 1em 1em 1em 1em;
+}
+
+section#news article p {
+    font-size: 10.5pt;
+    padding: 0 1em 0 1em;
+    line-height: 1.6;
+}
+
+section#news > article > p:first-of-type::first-letter {
+    font-size: 200%;
+    line-height: 0;
+}
+
+section#news article footer {
+    background-color: #F4655F;
+    padding: 1em;
+}
+
+section#news article footer, section#news article footer a{
+    font-family: Verdana, sans-serif;
+    color: white;
+    font-size: 9.5pt;
+}
+
+section#news article footer span.author::before{
+    content: "By "
+}
+
+section#news article footer span.tags a{
+    text-decoration: underline;
+}
+
+section#news article footer span.date{
+    padding: 0 1em 0 1em;
+}
+
+section#news article footer a.comments{
+    text-decoration: underline;
+}
+
+section#news article footer a.comments::after{
+    content: " comments"
+}
+
+body>footer{
+    background-color: #2A2F33;
+    color: white;
+    padding: 1em;
+    margin: 1em 1em 0 0;
+}
+
+body>footer p{
+    margin: 0;
+}
+
