@@ -43,11 +43,11 @@ header div#signup {
     font-size: 10pt;
 }
 
-header div#signup a  {
+header div#signup * {
     padding: 0em 0.5em 0em 0em;
 }
 
-header div#signup a + a {
+header div#signup * + * {
     padding: 0em 1em 0em 1em;
     border-left: 1px solid white;
 }
