@@ -80,8 +80,8 @@ $comments = getComments($_GET['id']);
         </footer>
       </article>
     </section>
-    <footer>
-      <p>&copy; Fake News, 2017</p>
-    </footer>
+    <?php
+    include_once('templates/common/footer.php');
+    ?>
   </body>
 </html>
