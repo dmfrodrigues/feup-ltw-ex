@@ -32,4 +32,11 @@ function updateArticle(int $id, string $title, string $introduction, string $ful
     $stmt->bindParam(':id'          , $id          , PDO::PARAM_INT);
     return $stmt->execute();
 }
+
+function deleteArticle(int $id){
+    global $db;
+    $stmt = $db->prepare('DELETE FROM news WHERE id=:id');
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
 ?>
