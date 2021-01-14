@@ -340,10 +340,6 @@ O nome de todas as receitas.
 
 ### Pergunta 30
 
-Correto
-
-Pontuou 0,500 de 0,500
-
 O nome de todas as receitas com uma diﬁculdade média (*medium*).
 
 ### Pergunta 31
