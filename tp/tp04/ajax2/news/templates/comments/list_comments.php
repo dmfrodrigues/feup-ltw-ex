@@ -8,7 +8,7 @@
       <p><?=$comment['text']?></p>
     </article>
   <?php } ?>
-  <form>
+  <form id="commentForm">
     <h2>Add your voice...</h2>
     <label>Username
       <input type="text" name="username">
