@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:first-child { color: blue }                  /* R1 */
+    div li { color: red }                           /* R2 */
+    div.widget ul#todo { color: cyan }              /* R3 */
+  </style>
+</head>
+<body>
+  <div class="widget">
+    <ul id="todo">
+      <li>Buy Bread</li>
+      <li>Learn Guitar</li>
+      <li class="important">Pay Bills</li>
+      <li class="postponed">Wash Car</li>
+    </ul>
+  </div>
+</body>
+</html>

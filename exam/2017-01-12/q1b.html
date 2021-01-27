@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    li:first-child { color: blue }                  /* R1 */
+    div li { color: red }                           /* R2 */
+    div.widget ul#todo { color: cyan }              /* R3 */
+
+    div > ul#todo .important { color: green }       /* R4 */
+    ul li.postponed { color: inherit }                /* R5 */
+    li + li + li { color: magenta }                 /* R6 */
+  </style>
+</head>
+<body>
+  <div class="widget">
+    <ul id="todo">
+      <li>Buy Bread</li>
+      <li>Learn Guitar</li>
+      <li class="important">Pay Bills</li>
+      <li class="postponed">Wash Car</li>
+    </ul>
+  </div>
+</body>
+</html>
