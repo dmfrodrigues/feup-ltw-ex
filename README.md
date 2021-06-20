@@ -8,7 +8,7 @@
 - **Course:** [LTW](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=459485) (Web Languages and Technologies)
 - **Subjects:** Web languages, web development.
 - **Tools:** HTML, CSS, PHP, Javascript
-- **Course grade:** ??/20
+- **Course grade:** 19/20
 
 ## Contents
 
