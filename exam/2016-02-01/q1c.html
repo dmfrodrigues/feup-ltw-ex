@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ul li:first-child     { color: red      ;} /* R1 */
+        #profile.box .name    { color: blue     ;} /* R2 */
+        #profile li ~ li ~ li { color: green    ;} /* R3 */
+        #profile .address     { color: magenta  ;} /* R4 */
+        div ul li.address     { color: yellow   ;} /* R5 */
+        a                     { color: cyan     ;} /* R6 */
+    </style>
+</head>
+<body>
+    <div id="profile" class="box">
+        <h2 class="name">John Doe</h2>
+        <ul>
+            <li><a href="www.johndoe.com">Website</a></li>
+            <li class="phone">111-222-333</li>
+            <li class="address">Saint Doe Street, 123</li>
+        </ul>
+    </div>
+</body>
+</html>
